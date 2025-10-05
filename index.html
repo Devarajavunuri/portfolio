@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devaraj | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+  <!-- Particle Container -->
+  <div class="particle-container"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="home">
+    <h1 class="navbar-title">Portfolio</h1>
+
+    <div class="nav-buttons">
+      <button class="nav-button" onclick="navigateTo('home', event)">Home</button>
+      <button class="nav-button" onclick="navigateTo('about', event)">About</button>
+      <button class="nav-button" onclick="navigateTo('experience', event)">Experience</button>
+      <button class="nav-button" onclick="navigateTo('contact', event)">Contact Me</button>
+    </div>
+
+    <div class="profile-container">
+      <img src="assets/myimage.jpg" alt="Devaraj" class="profile-image" />
+    </div>
+
+    <section class="hero-section">
+      <h1 class="hero-title">
+        Hi, I’m <span class="highlight">Devaraj</span>
+      </h1>
+
+      <h2 class="hero-subtitle">Software Developer @ Nimblix Technologies</h2>
+
+      <p class="hero-text">
+        Crafting robust <span class="highlight">Java solutions</span> and exploring the power of
+        <span class="highlight">Python & AI</span>.<br />
+        Passionate about <span class="highlight">Machine Learning & NLP</span>, turning data into smart decisions.<br />
+        Always enhancing my Java mastery to build scalable, intelligent, and future-ready systems.
+      </p>
+    </section>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2 class="about-title">My Journey 🚀</h2>
+    <div class="timeline">
+      <div class="timeline-item"><i class="fa-solid fa-heart icon"></i>
+        <div class="content">
+          <h3>Helping Family 💪</h3>
+          <p>Started helping my father financially since 8th grade, learning responsibility and perseverance.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item"><i class="fa-solid fa-ice-cream icon"></i>
+        <div class="content">
+          <h3>Ice Cream Seller 🍦</h3>
+          <p>Began selling ice creams to support my family.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item"><i class="fa-solid fa-newspaper icon"></i>
+        <div class="content">
+          <h3>Paper Boy 🗞️</h3>
+          <p>Delivered newspapers till 10th grade, building discipline and time management skills.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item"><i class="fa-solid fa-truck icon"></i>
+        <div class="content">
+          <h3>Labor Work 🏗️</h3>
+          <p>Worked in the industry loading/unloading cool drink boxes from trucks and lorries.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item"><i class="fa-solid fa-sun icon"></i>
+        <div class="content">
+          <h3>Early Morning Labor ⏰</h3>
+          <p>Worked from 2 AM to 8 AM in Akshaya Patra contract, learning dedication and hard work.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item"><i class="fa-solid fa-university icon"></i>
+        <div class="content">
+          <h3>Studies 🎓</h3>
+          <p>Continued my education through Intermediate and B.Tech while balancing work responsibilities.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item"><i class="fa-solid fa-motorcycle icon"></i>
+        <div class="content">
+          <h3>Rapido Captain 🛵</h3>
+          <p>Became a Rapido captain and contributed all earnings to support my father.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item"><i class="fa-solid fa-robot icon"></i>
+        <div class="content">
+          <h3>AI Apprenticeship 🤖</h3>
+          <p>Completed an unpaid AI apprenticeship at Qurinom Solutions. It greatly enhanced my skills and helped me grow professionally.</p>
+        </div>
+      </div>
+
+      
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience-section" id="experience">
+    <h2 class="experience-title">Certificates & Achievements 🏆</h2>
+    <div class="cards-container">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="fa-brands fa-java cert-icon"></i>
+            <h3 class="cert-name">Java Mastery</h3>
+            <p class="cert-tagline">Advanced Java Concepts</p>
+          </div>
+          <div class="flip-card-back" onclick="openModal('assets/java.jpg')">
+            <img src="assets/java.jpg" alt="Java Certificate" class="cert-image" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="fa-solid fa-brain cert-icon"></i>
+            <h3 class="cert-name">Advanced Technologies</h3>
+            <p class="cert-tagline">ML, DL, IoT, CV & SAP ABAP – Edunet & Partners</p>
+          </div>
+          <div class="flip-card-back" onclick="openModal('assets/MLIoT.jpg')">
+            <img src="assets/MLIoT.jpg" alt="MLIoT" class="cert-image" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="fa-solid fa-hands-helping cert-icon"></i>
+            <h3 class="cert-name">AI Apprenticeship</h3>
+            <p class="cert-tagline">Hands-on Learning at Qurinom Solutions (Unpaid)</p>
+          </div>
+          <div class="flip-card-back" onclick="openModal('assets/AI_Apprenticeship.jpg')">
+            <img src="assets/AI_Apprenticeship.jpg" alt="AI Apprenticeship" class="cert-image" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="fa-solid fa-robot cert-icon"></i>
+            <h3 class="cert-name">Data Science & ML</h3>
+            <p class="cert-tagline">Analyzing Data, Building Intelligent Systems</p>
+          </div>
+          <div class="flip-card-back" onclick="openModal('assets/DsML.jpg')">
+            <img src="assets/DsML.jpg" alt="DSML" class="cert-image" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="modal">
+    <span class="modal-close" onclick="closeModal()">
+      <i class="fa-solid fa-times"></i>
+    </span>
+    <img id="modal-img" class="modal-image" alt="certificate" />
+  </div>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <h2 class="footer-name">Devaraj</h2>
+    <div class="footer-icons">
+      <a href="https://wa.me/919701150364" target="_blank" class="icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:avunuridevaraj@gmail.com" target="_blank" class="icon email"><i class="fas fa-envelope"></i></a>
+      <a href="https://linkedin.com/in/devarajavunuri/" target="_blank" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/devarajavunuri" target="_blank" class="icon github"><i class="fab fa-github"></i></a>
+      <a href="https://instagram.com/avunuridevaraj" target="_blank" class="icon instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p class="footer-text">© 2025 Devaraj. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
